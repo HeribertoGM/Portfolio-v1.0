@@ -45,23 +45,14 @@ app.get('/archives/', (req, res) => {
 });
 
 app.get('/proyects/', (req, res) => {
-	var options = {
-		root: path.join(__dirname, 'static', 'html'),
-		dotfiles: 'deny',
-		headers: {
-			'x-timestamp': Date.now(),
-			'x-sent': true
-		}
-	}
-
-	let fileName = 'temp.html';
-
-	res.status(200).sendFile(fileName, options, (err) => {
+	res.status(200).render('proyects', (err, html) => {
 		if(err){
+			res.send('<h1> something fucked up </h1>');
 			console.log(err);
 		}
 		else{
-			console.log("sent: ", fileName);
+			res.send(html);
+			console.log('sent: proyects');
 		}
 	});
 });
