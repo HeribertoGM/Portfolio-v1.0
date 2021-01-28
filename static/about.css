@@ -1,0 +1,31 @@
+/*
+* ========================================
+* CSS general
+* ========================================
+*/
+
+body {
+	background-color: #265175;
+}
+
+/*
+* ========================================
+* CSS caja
+* ========================================
+*/
+
+#gencont {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #393D3F;
+}
+
+@media (min-width: 992px) {
+	#gencont {
+		max-width: 960px;
+	}
+}
+
+.row {
+	padding: 10px;
+}

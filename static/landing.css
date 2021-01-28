@@ -1,0 +1,382 @@
+/*
+ * ========================================
+ * CSS general
+ * ========================================
+ */
+
+body {
+  background-color: #393D3F;
+}
+
+/*
+ * ========================================
+ * CSS de Seccion 1
+ * ========================================
+ */
+
+#sec1 {
+  height: 92vh;
+  background-color: #265175;
+}
+
+#header {
+  position: relative;
+  bottom: 5vh;
+}
+
+#header #subtitle {
+  position: inherit;
+  left: 3vh;
+}
+
+/*
+ * ========================================
+ * CSS de Seccion 2
+ * ========================================
+ */
+
+#sec2 {
+  background-color: #393D3F;
+}
+
+#titulProyect {
+  text-align: center;
+  color: steelblue;
+}
+
+#sec2 a {
+  text-decoration: none;
+}
+
+.row {
+  height: 46vh;
+}
+
+.col {
+  padding: 0;
+}
+
+#scale-up-br, #scale-up-tr, #scale-up-bl, #scale-up-tl {
+  position: absolute;
+}
+
+#scale-up-br, #scale-up-tr {
+  right: 0;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-tl
+ * ----------------------------------------
+ */
+
+#scale-up-tl{
+  z-index: 1;
+}
+
+.col:hover #scale-up-tl{
+	-webkit-animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	z-index: 3;
+	filter: blur(3px);
+}
+
+#topizq {
+  position: absolute;
+  z-index: 2;
+  left: 5vh;
+  top: 10vh;
+  color: white; /* color que resalte */
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+#tl-text {
+	opacity: 0;
+  color: rgb(39,42,45);
+}
+
+.col:hover #topizq {
+  opacity: 0;
+}
+
+.col:hover #tl-text {
+	position: relative;
+	left: 5vh;
+	top: 5vh;
+	z-index: 4;
+	opacity: 1;
+}
+
+@-webkit-keyframes scale-up-tl {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-tl {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-tr
+ * ----------------------------------------
+ */
+
+ #scale-up-tr {
+  z-index: 1;
+ }
+
+.col:hover #scale-up-tr {
+	-webkit-animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	z-index: 3;
+	filter: blur(3px);
+}
+
+#topder {
+  position: absolute;
+  z-index: 2;
+  right: 5vh;
+  top: 10vh;
+  color: white; /* color que resalte */
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+#tr-text {
+  opacity: 0;
+  color: rgb(39,42,45);
+}
+
+.col:hover #topder {
+  opacity: 0;
+}
+
+.col:hover #tr-text {
+	position: relative;
+	right: 5vh;
+	top: 5vh;
+	z-index: 4;
+	opacity: 1;
+}
+
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-bl
+ * ----------------------------------------
+ */
+
+#scale-up-bl {
+  z-index: 1;
+}
+
+.col:hover #scale-up-bl {
+	-webkit-animation: scale-up-bl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-bl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	z-index: 3;
+	filter: blur(3px);
+}
+
+#botizq {
+  position: absolute;
+  z-index: 2;
+  left: 5vh;
+  bottom: 10vh;
+  color: white; /* color que resalte */
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+#bl-text {
+  opacity: 0;
+  color: rgb(39,42,45);
+}
+
+.col:hover #botizq {
+  opacity: 0;
+}
+
+.col:hover #bl-text {
+	position: relative;
+	left: 5vh;
+	bottom: 5vh;
+	z-index: 4;
+	opacity: 1;
+}
+
+@-webkit-keyframes scale-up-bl {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+}
+@keyframes scale-up-bl {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-br
+ * ----------------------------------------
+ */
+
+ #scale-up-br {
+  z-index: 1;
+ }
+
+.col:hover #scale-up-br {
+	-webkit-animation: scale-up-br 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-br 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	z-index: 3;
+	filter: blur(3px);
+}
+
+#botder {
+  position: absolute;
+  z-index: 2;
+  right: 5vh;
+  bottom: 10vh;
+  color: white; /* color que resalte */
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+#br-text {
+  opacity: 0;
+  color: rgb(39,42,45);
+}
+
+.col:hover #botder {
+  opacity: 0;
+}
+
+.col:hover #br-text {
+	position: relative;
+	right: 5vh;
+	bottom: 5vh;
+	z-index: 4;
+	opacity: 1;
+}
+
+@-webkit-keyframes scale-up-br {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+}
+@keyframes scale-up-br {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+}
+
+/*
+ * ========================================
+ * CSS de Seccion 3
+ * ========================================
+ */
+
+#sec3 {
+  height: 90vh;
+  background-color: #265175;
+}
+
+#cont3 {
+  background-color: #393D3F;
+}
+
+#sec3 h1,label {
+  color: #d9d9d9;
+}
+
+/*
+ * ========================================
+ * footer
+ * ========================================
+ */

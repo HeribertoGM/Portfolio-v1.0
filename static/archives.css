@@ -1,0 +1,42 @@
+/*
+* ========================================
+* CSS general
+* ========================================
+*/
+
+body {
+	background-color: #265175;
+}
+
+/*
+* ========================================
+* CSS caja
+* ========================================
+*/
+
+#box {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 30px;
+	background-color: #393D3F;
+	height: 80vh;
+}
+
+@media (min-width: 992px) {
+	#box {
+		max-width: 960px;
+	}
+}
+
+h1 {
+	margin-left: 30px;
+}
+
+a {
+	color: #4c7186;
+}
+
+a:hover {
+	color: #0099b5;
+	text-decoration: none;
+}
