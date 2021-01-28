@@ -79,7 +79,7 @@ app.get('/archives/', (req, res) => {
 		}
 	}
 
-	let fileName = 'temp.html';
+	let fileName = 'archives.html';
 
 	res.status(200).sendFile(fileName, options, (err) => {
 		if(err){
