@@ -1,0 +1,122 @@
+<!-- pre -->
+<%- include('pre') -%>
+
+<!-- custom CSS -->
+<link rel="stylesheet" type="text/css" href="/static/css/landing.css">
+
+<title>HeribertoGM - Home</title>
+</head>
+<body>
+
+<!-- Barra de navegacion -->
+<%- include('navbar') -%>
+	
+<!-- Seccion primera -->
+<section>
+	<div class="d-flex justify-content-center align-items-center" id="sec1">
+		<div id="header">
+			<h1 class="display-1">Hi, I´m Heriberto</h1>
+			<h1 class="text-muted" id="subtitle"> and i love coding in 
+				<span class="txt-rotate" data-period="2000" data-rotate='[ "Python.", "Java.", "C++.", "HTML.", "CSS.", "JavaScript." ]'></span></h1>
+		</div>
+	</div>
+</section>
+
+<hr>
+<!-- Seccion Proyectos -->
+<section id="sec2">
+	<h1 class="display-4" id="titulProyect"> Proyectos</h1>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col h-100">
+				<a href="#"><img class="img-fluid h-100" src="/static/images/capturaprue.png" id="scale-up-tl">
+				<h1 id="topizq"> Juego Breaker </h1>
+				<h1 id=tl-text>Hola Mundo!</h1>
+				<h3 class="text-muted"  id="tl-text">java</h3>
+				<h5 class="text-break" id="tl-text">Pagina desarrollada en python con el framework Django para la empresa SES con origen en Mexico</h5></a>
+			</div>
+			<div class="col h-100">
+				<a href="#"><img class="img-fluid h-100" src="/static/images/fondo1pru.jpeg" id="scale-up-tr">
+				<h1 class="text-right" id="topder"> Paint de archivos .hgm </h1>
+				<h1 class="text-right" id=tr-text>Hola Mundo!</h1>
+				<h3 class="text-right text-muted"  id="tr-text">java</h3>
+				<h5 class="text-right" id="tr-text">videojuego clasico de romper bloques hecho a base java natural como proyecto final de clase de universidad</h5></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col h-100">
+				<a href="#"><img class="img-fluid h-100" src="/static/images/fondo1pru.jpeg" id="scale-up-bl">
+				<h1 id="botizq"> Pagina compañia ses </h1>
+				<h1 id=bl-text>Hola Mundo!</h1>
+				<h3 class="text-muted"  id="bl-text">java</h3>
+				<h5 class="text-break" id="bl-text">Pagina desarrollada en python con el framework Django para la empresa SES con origen en Mexico</h5></a>
+			</div>
+			<div class="col h-100">
+				<a href="#"><img class="img-fluid h-100" src="/static/images/fondo1pru.jpeg" id="scale-up-br">
+				<h1 class="text-right" id="botder"> Titulo visible 4 </h1>
+				<h1 class="text-right" id=br-text>Hola Mundo!</h1>
+				<h3 class="text-right text-muted"  id="br-text">java</h3>
+				<h5 class="text-right text-break" id="br-text">videojuego clasico de romper bloques hecho a base java natural como proyecto final de clase de universidad</h5></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr>
+
+<!-- Seccion contactos -->
+<section class="d-flex justify-content-center align-items-center" id="sec3">
+	<div class="container h-75 pt-3 row" id="cont3">
+		<div class="col pl-3 d-flex align-items-center"> <!-- social alinear a la izquierda -->
+			<div>
+				<h1>Contact me</h1>
+				<a href="#">
+					<div class="d-flex align-items-center p-4">
+						<img src="/static/images/linkedin.svg" width="50" height="50">
+						<h3 class="text-muted pl-3">LinkedIn</h3>
+					</div>
+				</a>
+				<a href="https://github.com/HeribertoGM">
+					<div class="d-flex align-items-center p-4">
+						<img src="/static/images/github.svg" width="50" height="50">
+						<h3 class="text-muted pl-3">Github</h3>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col"> 
+			<!-- form alinear a la derecha -->
+			<form method="POST">
+				<div class="form-group col-auto">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" placeholder="Name" id="name">
+				</div>
+				<div class="form-group col-auto">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" placeholder="email@example.com" id="email">
+				</div>
+				<div class="form-group col-auto">
+					<label for="title">Title:</label>
+					<input type="text" class="form-control" placeholder="Title" id="title">
+				</div>
+				<div class="form-group col-auto">
+					<label for="msg">Message:</label>
+					<textarea class="form-control" id="msg" rows="3" placeholder="Message"></textarea>
+				</div>
+				<div class="d-flex justify-content-end pr-4">
+					<button type="submit" class="btn btn-primary">Send!</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- footer -->
+<%- include('footer') -%>
+
+<!-- custom js -->
+<script type="text/javascript" src="/static/js/landing.js"></script>
+
+<!-- post -->
+<%- include('post') -%>
