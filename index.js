@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/', (req, res) => {
 	var options = {
-		root: path.join(__dirname, 'static'),
+		root: path.join(__dirname, 'static', 'html'),
 		dotfiles: 'deny',
 		headers: {
 			'x-timestamp': Date.now(),
@@ -25,9 +25,9 @@ app.get('/', (req, res) => {
 	});
 });
 
-app.get('/static/images/:fileName', (req, res) => {
+app.get('/about/', (req, res) => {
 	var options = {
-		root: path.join(__dirname, 'static', 'images'),
+		root: path.join(__dirname, 'static', 'html'),
 		dotfiles: 'deny',
 		headers: {
 			'x-timestamp': Date.now(),
@@ -35,7 +35,7 @@ app.get('/static/images/:fileName', (req, res) => {
 		}
 	}
 
-	let fileName = req.params.fileName;
+	let fileName = 'about.html';
 
 	res.status(200).sendFile(fileName, options, (err) => {
 		if(err){
@@ -47,9 +47,55 @@ app.get('/static/images/:fileName', (req, res) => {
 	});
 });
 
-app.get('/static/:fileName', (req, res) => {
+app.get('/proyects/', (req, res) => {
 	var options = {
-		root: path.join(__dirname, 'static'),
+		root: path.join(__dirname, 'static', 'html'),
+		dotfiles: 'deny',
+		headers: {
+			'x-timestamp': Date.now(),
+			'x-sent': true
+		}
+	}
+
+	let fileName = 'temp.html';
+
+	res.status(200).sendFile(fileName, options, (err) => {
+		if(err){
+			console.log(err);
+		}
+		else{
+			console.log("sent: ", fileName);
+		}
+	});
+});
+
+app.get('/archives/', (req, res) => {
+	var options = {
+		root: path.join(__dirname, 'static', 'html'),
+		dotfiles: 'deny',
+		headers: {
+			'x-timestamp': Date.now(),
+			'x-sent': true
+		}
+	}
+
+	let fileName = 'temp.html';
+
+	res.status(200).sendFile(fileName, options, (err) => {
+		if(err){
+			console.log(err);
+		}
+		else{
+			console.log("sent: ", fileName);
+		}
+	});
+});
+
+app.get('/static/:dir/:fileName', (req, res) => {
+	let dir = req.params.dir;
+
+	var options = {
+		root: path.join(__dirname, 'static', dir),
 		dotfiles: 'deny',
 		headers: {
 			'x-timestamp': Date.now(),
