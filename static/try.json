@@ -1,0 +1,65 @@
+[
+	{
+		"img": "/static/images/fondo1pru.jpeg",
+		"title": "title1",
+		"tags": [
+			{"type":"badge-primary", "in": "primario1"},
+			{"type":"badge-secondary", "in": "secundario1"},
+			{"type":"badge-info", "in": "informacion1"}
+		]
+	},
+	{
+		"img": "/static/images/capturaprue.png",
+		"title": "title2",
+		"tags": [
+			{"type":"badge-primary", "in": "primario2"},
+			{"type":"badge-secondary", "in": "secundario2"},
+			{"type":"badge-info", "in": "informacion2"}
+		]
+	},
+	{
+		"img": "/static/images/fondo1pru.jpeg",
+		"title": "title3",
+		"tags": [
+			{"type":"badge-primary", "in": "primario3"},
+			{"type":"badge-secondary", "in": "secundario3"},
+			{"type":"badge-info", "in": "informacion3"}
+		]
+	},
+	{
+		"img": "/static/images/capturaprue.png",
+		"title": "title4",
+		"tags": [
+			{"type":"badge-primary", "in": "primario4"},
+			{"type":"badge-secondary", "in": "secundario4"},
+			{"type":"badge-info", "in": "informacion4"}
+		]
+	},
+	{
+		"img": "/static/images/fondo1pru.jpeg",
+		"title": "title5",
+		"tags": [
+			{"type":"badge-primary", "in": "primario5"},
+			{"type":"badge-secondary", "in": "secundario5"},
+			{"type":"badge-info", "in": "informacion5"}
+		]
+	},
+	{
+		"img": "/static/images/capturaprue.png",
+		"title": "title6",
+		"tags": [
+			{"type":"badge-primary", "in": "primario6"},
+			{"type":"badge-secondary", "in": "secundario6"},
+			{"type":"badge-info", "in": "informacion6"}
+		]
+	},
+	{
+		"img": "/static/images/fondo1pru.jpeg",
+		"title": "title7",
+		"tags": [
+			{"type":"badge-primary", "in": "primario7"},
+			{"type":"badge-secondary", "in": "secundario7"},
+			{"type":"badge-info", "in": "informacion7"}
+		]
+	}
+]

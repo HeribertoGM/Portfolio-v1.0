@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 const ejs = require('ejs');
 
 const app = express();
@@ -45,7 +46,11 @@ app.get('/archives/', (req, res) => {
 });
 
 app.get('/proyects/', (req, res) => {
-	res.status(200).render('proyects', (err, html) => {
+	let filePath = path.join(__dirname, 'static', 'try.json');
+	let datos = JSON.parse(fs.readFileSync(filePath));
+	let num = datos.length;
+
+	res.status(200).render('proyects', {data: datos, len: num}, (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
