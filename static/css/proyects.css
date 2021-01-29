@@ -1,0 +1,35 @@
+/*
+* ========================================
+* CSS general
+* ========================================
+*/
+
+body {
+	background-color: #265175;
+}
+
+/*
+* ========================================
+* CSS caja
+* ========================================
+*/
+
+#box {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 30px;
+	background-color: #393D3F;
+}
+
+@media (min-width: 992px) {
+	#box {
+		max-width: 960px;
+	}
+}
+
+h1 {
+	margin-left: 30px;
+}
+
+
+
