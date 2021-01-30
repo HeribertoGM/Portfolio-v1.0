@@ -7,7 +7,10 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-	res.status(200).render('landing', (err, html) => {
+	let filePath = path.join(__dirname, 'static', 'try.json');
+	let datos = JSON.parse(fs.readFileSync(filePath));
+
+	res.status(200).render('landing', {data: datos}, (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
