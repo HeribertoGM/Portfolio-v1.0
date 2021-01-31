@@ -4,13 +4,17 @@ const fs = require('fs');
 const ejs = require('ejs');
 
 const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
 	let filePath = path.join(__dirname, 'static', 'try.json');
 	let datos = JSON.parse(fs.readFileSync(filePath));
 
-	res.status(200).render('landing', {data: datos}, (err, html) => {
+	res.status(200).render('./es/landingES', {data: datos}, (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
@@ -23,7 +27,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about/', (req, res) => {
-	res.status(200).render('about', (err, html) => {
+	res.status(200).render('./es/aboutES', (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
@@ -36,7 +40,7 @@ app.get('/about/', (req, res) => {
 });
 
 app.get('/archives/', (req, res) => {
-	res.status(200).render('archives', (err, html) => {
+	res.status(200).render('./es/archivesES', (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
@@ -48,12 +52,28 @@ app.get('/archives/', (req, res) => {
 	});
 });
 
+app.get('/proyects/:id', (req, res) => {
+	let filePath = path.join(__dirname, 'static', 'try.json');
+	let datos = JSON.parse(fs.readFileSync(filePath));
+
+	let id = req.params.id;
+	let proy;
+	for(let i of datos){
+		if(id == i.id){
+			proy = i;
+		}
+	}
+
+	console.log(proy);
+	res.status(200).send(proy);
+});
+
 app.get('/proyects/', (req, res) => {
 	let filePath = path.join(__dirname, 'static', 'try.json');
 	let datos = JSON.parse(fs.readFileSync(filePath));
 	let num = datos.length;
 
-	res.status(200).render('proyects', {data: datos, len: num}, (err, html) => {
+	res.status(200).render('./es/proyectsES', {data: datos, len: num}, (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
@@ -67,6 +87,7 @@ app.get('/proyects/', (req, res) => {
 
 app.get('/static/:dir/:fileName', (req, res) => {
 	let dir = req.params.dir;
+	let fileName = req.params.fileName;
 
 	var options = {
 		root: path.join(__dirname, 'static', dir),
@@ -76,8 +97,6 @@ app.get('/static/:dir/:fileName', (req, res) => {
 			'x-sent': true
 		}
 	}
-
-	let fileName = req.params.fileName;
 
 	res.status(200).sendFile(fileName, options, (err) => {
 		if(err){
@@ -89,6 +108,16 @@ app.get('/static/:dir/:fileName', (req, res) => {
 	});
 });
 
+app.post('/email/', (req, res) => {
+	let form = req.body;
+	if(form.name && form.email && form.title && form.msg){
+		res.send("completo")
+	}
+	else{
+		res.send("incompleto");
+	}
+});
+
 app.listen(3000, (err) => {
 	if(err){
 		console.log(err);
@@ -97,3 +126,7 @@ app.listen(3000, (err) => {
 		console.log('listening on localhost:3000');
 	}
 });
+
+
+
+

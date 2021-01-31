@@ -1,5 +1,6 @@
 [
 	{
+		"id": 1,
 		"img": "/static/images/fondo1pru.jpeg",
 		"title": "title1",
 		"flag": 1,
@@ -8,9 +9,11 @@
 			{"type":"badge-primary", "in": "primario1"},
 			{"type":"badge-secondary", "in": "secundario1"},
 			{"type":"badge-info", "in": "informacion1"}
-		]
+		],
+		"showcase": []
 	},
 	{
+		"id": 2,
 		"img": "/static/images/capturaprue.png",
 		"title": "title2",
 		"flag": 2,
@@ -19,20 +22,24 @@
 			{"type":"badge-primary", "in": "primario2"},
 			{"type":"badge-secondary", "in": "secundario2"},
 			{"type":"badge-info", "in": "informacion2"}
-		]
+		],
+		"showcase": []
 	},
 	{
+		"id": 3,
 		"img": "/static/images/fondo1pru.jpeg",
 		"title": "title3",
-		"flag": 3,
-		"info": "3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"flag": -1,
+		"info": "-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario3"},
 			{"type":"badge-secondary", "in": "secundario3"},
 			{"type":"badge-info", "in": "informacion3"}
-		]
+		],
+		"showcase": []
 	},
 	{
+		"id": 4,
 		"img": "/static/images/capturaprue.png",
 		"title": "title4",
 		"flag": 4,
@@ -41,9 +48,11 @@
 			{"type":"badge-primary", "in": "primario4"},
 			{"type":"badge-secondary", "in": "secundario4"},
 			{"type":"badge-info", "in": "informacion4"}
-		]
+		],
+		"showcase": []
 	},
 	{
+		"id": 5,
 		"img": "/static/images/fondo1pru.jpeg",
 		"title": "title5",
 		"flag": -1,
@@ -52,20 +61,24 @@
 			{"type":"badge-primary", "in": "primario5"},
 			{"type":"badge-secondary", "in": "secundario5"},
 			{"type":"badge-info", "in": "informacion5"}
-		]
+		],
+		"showcase": []
 	},
 	{
+		"id": 6,
 		"img": "/static/images/capturaprue.png",
 		"title": "title6",
-		"flag": -1,
-		"info": "-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"flag": 3,
+		"info": "3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario6"},
 			{"type":"badge-secondary", "in": "secundario6"},
 			{"type":"badge-info", "in": "informacion6"}
-		]
+		],
+		"showcase": []
 	},
 	{
+		"id": 7,
 		"img": "/static/images/fondo1pru.jpeg",
 		"title": "title7",
 		"flag": -1,
@@ -74,6 +87,7 @@
 			{"type":"badge-primary", "in": "primario7"},
 			{"type":"badge-secondary", "in": "secundario7"},
 			{"type":"badge-info", "in": "informacion7"}
-		]
+		],
+		"showcase": []
 	}
 ]

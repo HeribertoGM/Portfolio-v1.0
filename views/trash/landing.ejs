@@ -1,5 +1,5 @@
 <!-- pre -->
-<%- include('pre') -%>
+<%- include('./general/pre') -%>
 
 <!-- custom CSS -->
 <link rel="stylesheet" type="text/css" href="/static/css/landing.css">
@@ -16,8 +16,7 @@
 	<div class="d-flex justify-content-center align-items-center" id="sec1">
 		<div id="header">
 			<h1 class="display-1">Hi, I´m Heriberto</h1>
-			<h1 class="text-muted" id="subtitle"> and i love coding in 
-				<span class="txt-rotate" data-period="2000" data-rotate='[ "Python.", "Java.", "C++.", "HTML.", "CSS.", "JavaScript." ]'></span></h1>
+			<h1 class="text-muted" id="subtitle"> and i love coding in <span class="txt-rotate" data-period="2000" data-rotate='[ "Python.", "Java.", "C++.", "HTML.", "CSS.", "JavaScript." ]'></span></h1>
 		</div>
 	</div>
 </section>
@@ -38,7 +37,7 @@
 			<div class="col h-100">
 				<a href="#">
 					<img class="img-fluid h-100" src="<%- objs[0].img %>" id="scale-up-tl">
-					<h1 id="topizq"><%- objs[0].title %></h1>
+					<h1 id="topizq"><%- objs[0].title %>-<%- objs[0].id %></h1>
 					<h1 id=tl-text><%- objs[0].title %></h1>
 					<h3 class="text-muted"  id="tl-text">
 						<% for(let i of objs[0].tags){ %>
@@ -51,7 +50,7 @@
 			<div class="col h-100">
 				<a href="#">
 					<img class="img-fluid h-100" src="<%- objs[1].img %>" id="scale-up-tr">
-					<h1 class="text-right" id="topder"><%- objs[1].title %></h1>
+					<h1 class="text-right" id="topder"><%- objs[1].title %>-<%- objs[1].id %></h1>
 					<h1 class="text-right" id=tr-text><%- objs[1].title %></h1>
 					<h3 class="text-right text-muted"  id="tr-text">
 						<% for(let i of objs[1].tags){ %>
@@ -66,7 +65,7 @@
 			<div class="col h-100">
 				<a href="#">
 					<img class="img-fluid h-100" src="<%- objs[2].img %>" id="scale-up-bl">
-					<h1 id="botizq"><%- objs[2].title %></h1>
+					<h1 id="botizq"><%- objs[2].title %>-<%- objs[2].id %></h1>
 					<h1 id=bl-text><%- objs[2].title %></h1>
 					<h3 class="text-muted"  id="bl-text">
 						<% for(let i of objs[2].tags){ %>
@@ -79,7 +78,7 @@
 			<div class="col h-100">
 				<a href="#">
 					<img class="img-fluid h-100" src="<%- objs[3].img %>" id="scale-up-br">
-					<h1 class="text-right" id="botder"><%- objs[3].title %></h1>
+					<h1 class="text-right" id="botder"><%- objs[3].title %>-<%- objs[3].id %></h1>
 					<h1 class="text-right" id=br-text><%- objs[3].title %></h1>
 					<h3 class="text-right text-muted"  id="br-text">
 						<% for(let i of objs[3].tags){ %>
@@ -117,22 +116,22 @@
 		</div>
 		<div class="col"> 
 			<!-- form alinear a la derecha -->
-			<form method="POST">
+			<form method="POST" action="/email/">
 				<div class="form-group col-auto">
 					<label for="name">Name:</label>
-					<input type="text" class="form-control" placeholder="Name" id="name">
+					<input type="text" class="form-control" placeholder="Name" id="name" name="name">
 				</div>
 				<div class="form-group col-auto">
 					<label for="email">Email:</label>
-					<input type="email" class="form-control" placeholder="email@example.com" id="email">
+					<input type="email" class="form-control" placeholder="email@example.com" id="email" name="email">
 				</div>
 				<div class="form-group col-auto">
 					<label for="title">Title:</label>
-					<input type="text" class="form-control" placeholder="Title" id="title">
+					<input type="text" class="form-control" placeholder="Title" id="title" name="title">
 				</div>
 				<div class="form-group col-auto">
 					<label for="msg">Message:</label>
-					<textarea class="form-control" id="msg" rows="3" placeholder="Message"></textarea>
+					<textarea class="form-control" id="msg" rows="3" placeholder="Message" name="msg"></textarea>
 				</div>
 				<div class="d-flex justify-content-end pr-4">
 					<button type="submit" class="btn btn-primary">Send!</button>
@@ -149,4 +148,4 @@
 <script type="text/javascript" src="/static/js/landing.js"></script>
 
 <!-- post -->
-<%- include('post') -%>
+<%- include('./general/post') -%>
