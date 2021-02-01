@@ -21,9 +21,29 @@ app.get('/', (req, res) => {
 		}
 		else{
 			res.send(html);
-			console.log('sent: landing');
+			console.log('sent: landingES');
 		}
 	});
+});
+
+app.get('/en/', (req, res) => {
+	let filePath = path.join(__dirname, 'static', 'try.json');
+	let datos = JSON.parse(fs.readFileSync(filePath));
+
+	res.status(200).render('./en/landingEN', {data: datos}, (err, html) => {
+		if(err){
+			res.send('<h1> something fucked up </h1>');
+			console.log(err);
+		}
+		else{
+			res.send(html);
+			console.log('sent: landingEN');
+		}
+	});
+});
+
+app.get('/jp/', (req, res) => {
+	res.status(200).send("<h1>Working!</h1>");
 });
 
 app.get('/about/', (req, res) => {
@@ -34,7 +54,23 @@ app.get('/about/', (req, res) => {
 		}
 		else{
 			res.send(html);
-			console.log('sent: about');
+			console.log('sent: aboutES');
+		}
+	});
+});
+
+app.get('/en/about/', (req, res) => {
+	let filePath = path.join(__dirname, 'static', 'try.json');
+	let datos = JSON.parse(fs.readFileSync(filePath));
+
+	res.status(200).render('./en/aboutEN', {data: datos}, (err, html) => {
+		if(err){
+			res.send('<h1> something fucked up </h1>');
+			console.log(err);
+		}
+		else{
+			res.send(html);
+			console.log('sent: aboutEN');
 		}
 	});
 });
@@ -48,6 +84,22 @@ app.get('/archives/', (req, res) => {
 		else{
 			res.send(html);
 			console.log('sent: archives');
+		}
+	});
+});
+
+app.get('/en/archives/', (req, res) => {
+	let filePath = path.join(__dirname, 'static', 'try.json');
+	let datos = JSON.parse(fs.readFileSync(filePath));
+
+	res.status(200).render('./en/archivesEN', {data: datos}, (err, html) => {
+		if(err){
+			res.send('<h1> something fucked up </h1>');
+			console.log(err);
+		}
+		else{
+			res.send(html);
+			console.log('sent: archivesEN');
 		}
 	});
 });
@@ -81,6 +133,23 @@ app.get('/proyects/', (req, res) => {
 		else{
 			res.send(html);
 			console.log('sent: proyects');
+		}
+	});
+});
+
+app.get('/en/proyects/', (req, res) => {
+	let filePath = path.join(__dirname, 'static', 'try.json');
+	let datos = JSON.parse(fs.readFileSync(filePath));
+	let num = datos.length;
+
+	res.status(200).render('./en/proyectsEN', {data: datos, len: num}, (err, html) => {
+		if(err){
+			res.send('<h1> something fucked up </h1>');
+			console.log(err);
+		}
+		else{
+			res.send(html);
+			console.log('sent: proyectsEN');
 		}
 	});
 });

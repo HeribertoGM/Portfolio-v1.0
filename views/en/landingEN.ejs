@@ -4,19 +4,19 @@
 <!-- custom CSS -->
 <link rel="stylesheet" type="text/css" href="/static/css/landing.css">
 
-<title>HeribertoGM - Hogar</title>
+<title>HeribertoGM - Home</title>
 </head>
 <body>
 
 <!-- Barra de navegacion -->
-<%- include('./navbarES') -%>
+<%- include('./navbarEN') -%>
 	
 <!-- Seccion primera -->
 <section>
 	<div class="d-flex justify-content-center align-items-center" id="sec1">
 		<div id="header">
-			<h1 class="display-1">Hola, soy Heriberto</h1>
-			<h1 class="text-muted" id="subtitle"> y me gusta programar en <span class="txt-rotate" data-period="2000" data-rotate='[ "Python.", "Java.", "C++.", "HTML.", "CSS.", "JavaScript." ]'></span></h1>
+			<h1 class="display-1">Hi, I'm Heriberto</h1>
+			<h1 class="text-muted" id="subtitle"> and i love coding in <span class="txt-rotate" data-period="2000" data-rotate='[ "Python.", "Java.", "C++.", "HTML.", "CSS.", "JavaScript." ]'></span></h1>
 		</div>
 	</div>
 </section>
@@ -24,7 +24,7 @@
 <hr>
 <!-- Seccion Proyectos -->
 <section id="sec2">
-	<h1 class="display-4" id="titulProyect">Proyectos</h1>
+	<h1 class="display-4" id="titulProyect">Proyects</h1>
 	<br>
 	<div class="container">
 		<% let objs = []; %>
@@ -99,7 +99,7 @@
 	<div class="container h-75 pt-3 row" id="cont3">
 		<div class="col pl-3 d-flex align-items-center"> <!-- social alinear a la izquierda -->
 			<div>
-				<h1>Contactame</h1>
+				<h1>Contact me</h1>
 				<a href="#">
 					<div class="d-flex align-items-center p-4">
 						<img src="/static/images/linkedin.svg" width="50" height="50">
@@ -118,23 +118,23 @@
 			<!-- form alinear a la derecha -->
 			<form method="POST" action="/email/">
 				<div class="form-group col-auto">
-					<label for="name">Nombre:</label>
-					<input type="text" class="form-control" placeholder="Nombre" id="name" name="name">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" placeholder="Name" id="name" name="name">
 				</div>
 				<div class="form-group col-auto">
 					<label for="email">Email:</label>
 					<input type="email" class="form-control" placeholder="email@example.com" id="email" name="email">
 				</div>
 				<div class="form-group col-auto">
-					<label for="title">Titulo:</label>
-					<input type="text" class="form-control" placeholder="Titulo" id="title" name="title">
+					<label for="title">Title:</label>
+					<input type="text" class="form-control" placeholder="Title" id="title" name="title">
 				</div>
 				<div class="form-group col-auto">
-					<label for="msg">Mensaje:</label>
-					<textarea class="form-control" id="msg" rows="3" placeholder="Mensaje" name="msg"></textarea>
+					<label for="msg">Message:</label>
+					<textarea class="form-control" id="msg" rows="3" placeholder="Message" name="msg"></textarea>
 				</div>
 				<div class="d-flex justify-content-end pr-4">
-					<button type="submit" class="btn btn-primary">Enviar!</button>
+					<button type="submit" class="btn btn-primary">Send!</button>
 				</div>
 			</form>
 		</div>
@@ -142,7 +142,7 @@
 </section>
 
 <!-- footer -->
-<%- include('./footerES') -%>
+<%- include('./footerEN') -%>
 
 <!-- custom js -->
 <script type="text/javascript" src="/static/js/landing.js"></script>
