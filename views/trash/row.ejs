@@ -1,7 +1,0 @@
-<div class="row my-4">
-	<% let len = indx.length; %>
-	<% for(let i=len; i>0; i--){ %>
-		<% let index = indx[i-1]; %>
-		<%- include('col', {data: data, indx: index}); -%>
-	<% } %>
-</div>
