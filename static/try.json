@@ -2,92 +2,136 @@
 	{
 		"id": 1,
 		"img": "/static/images/fondo1pru.jpeg",
-		"title": "title1",
+		"titleEN": "title1",
+		"titleES": "titulo1",
 		"flag": 1,
-		"info": "1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoEN": "1 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoES": "1 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario1"},
 			{"type":"badge-secondary", "in": "secundario1"},
 			{"type":"badge-info", "in": "informacion1"}
 		],
-		"showcase": []
+		"showcase": [
+			"/static/images/MoonByul.jpg",
+			"/static/images/tiger.jpg",
+			"/static/images/demon.jpg",
+			"/static/images/t1.jpeg",
+			"/static/images/pixbg.png"
+		]
 	},
 	{
 		"id": 2,
 		"img": "/static/images/capturaprue.png",
-		"title": "title2",
+		"titleEN": "title2",
+		"titleES": "titulo2",
 		"flag": 2,
-		"info": "2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoEN": "2 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoES": "2 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario2"},
 			{"type":"badge-secondary", "in": "secundario2"},
 			{"type":"badge-info", "in": "informacion2"}
 		],
-		"showcase": []
+		"showcase": [
+			"/static/images/t1.jpeg",
+			"/static/images/pixbg.png",
+			"/static/images/demon.jpg"
+		]
 	},
 	{
 		"id": 3,
 		"img": "/static/images/fondo1pru.jpeg",
-		"title": "title3",
+		"titleEN": "title3",
+		"titleES": "titulo3",
 		"flag": -1,
-		"info": "-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoEN": "-1 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoES": "-1 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario3"},
 			{"type":"badge-secondary", "in": "secundario3"},
 			{"type":"badge-info", "in": "informacion3"}
 		],
-		"showcase": []
+		"showcase": [
+			"/static/images/MoonByul.jpg",
+			"/static/images/tiger.jpg",
+			"/static/images/demon.jpg"
+		]
 	},
 	{
 		"id": 4,
 		"img": "/static/images/capturaprue.png",
-		"title": "title4",
+		"titleEN": "title4",
+		"titleES": "titulo4",
 		"flag": 4,
-		"info": "4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoEN": "4 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoES": "4 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario4"},
 			{"type":"badge-secondary", "in": "secundario4"},
 			{"type":"badge-info", "in": "informacion4"}
 		],
-		"showcase": []
+		"showcase": [
+			"/static/images/MoonByul.jpg",
+			"/static/images/tiger.jpg",
+			"/static/images/demon.jpg"
+		]
 	},
 	{
 		"id": 5,
 		"img": "/static/images/fondo1pru.jpeg",
-		"title": "title5",
+		"titleEN": "title5",
+		"titleES": "titulo5",
 		"flag": -1,
-		"info": "-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoEN": "-1 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoES": "-1 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario5"},
 			{"type":"badge-secondary", "in": "secundario5"},
 			{"type":"badge-info", "in": "informacion5"}
 		],
-		"showcase": []
+		"showcase": [
+			"/static/images/MoonByul.jpg",
+			"/static/images/tiger.jpg",
+			"/static/images/demon.jpg"
+		]
 	},
 	{
 		"id": 6,
 		"img": "/static/images/capturaprue.png",
-		"title": "title6",
+		"titleEN": "title6",
+		"titleES": "titulo6",
 		"flag": 3,
-		"info": "3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoEN": "3 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoES": "3 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario6"},
 			{"type":"badge-secondary", "in": "secundario6"},
 			{"type":"badge-info", "in": "informacion6"}
 		],
-		"showcase": []
+		"showcase": [
+			"/static/images/MoonByul.jpg",
+			"/static/images/tiger.jpg",
+			"/static/images/demon.jpg"
+		]
 	},
 	{
 		"id": 7,
 		"img": "/static/images/fondo1pru.jpeg",
-		"title": "title7",
+		"titleEN": "title7",
+		"titleES": "titulo7",
 		"flag": -1,
-		"info": "-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoEN": "-1 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+		"infoES": "-1 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
 			{"type":"badge-primary", "in": "primario7"},
 			{"type":"badge-secondary", "in": "secundario7"},
 			{"type":"badge-info", "in": "informacion7"}
 		],
-		"showcase": []
+		"showcase": [
+			"/static/images/MoonByul.jpg",
+			"/static/images/tiger.jpg",
+			"/static/images/demon.jpg"
+		]
 	}
 ]

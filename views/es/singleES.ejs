@@ -1,0 +1,46 @@
+<!-- pre -->
+<%- include('../general/pre') -%>
+
+<!-- custom CSS -->
+<link rel="stylesheet" type="text/css" href="/static/css/single.css">
+
+<title>HeribertoGM - <%- data.titleES %></title>
+</head>
+<body>
+
+<!-- Barra de navegacion -->
+<%- include('./navbarES') -%>
+
+<!-- Dentro -->
+<section>
+	<div class="container" id="gencont">
+		<div class="row" style="border: solid 3px red;">
+			<div class="col-sm-7" style="border: solid 3px blue;">
+				<div class="d-flex align-items-center h-100">
+					<div style="border: solid 3px green;">
+						<h1><%- data.titleES %></h1>
+						<h5 class="text-muted"><%- data.tags[0].in %></h5>
+						<p><%- data.infoES %></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5 text-center"  style="border: solid 3px blue;">
+				<img src="<%- data.img %>" class="img-fluid">
+			</div>
+		</div>
+		<hr>
+		<div class="row" style="border: solid 3px red;">
+			<div id="imgs" class="w-100 text-center" style="border: solid 3px pink;">
+				<% for(let i of data.showcase){ %>
+					<img class="imagen" src="<%- i %>">
+				<% } %>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- footer -->
+<%- include('./footerES') -%>
+
+<!-- post -->
+<%- include('../general/post') -%>

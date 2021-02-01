@@ -10,6 +10,9 @@ app.use(express.urlencoded({extended:true}));
 
 app.set('view engine', 'ejs');
 
+/*
+*	landing
+*/
 app.get('/', (req, res) => {
 	let filePath = path.join(__dirname, 'static', 'try.json');
 	let datos = JSON.parse(fs.readFileSync(filePath));
@@ -46,6 +49,9 @@ app.get('/jp/', (req, res) => {
 	res.status(200).send("<h1>Working!</h1>");
 });
 
+/*
+*	about
+*/
 app.get('/about/', (req, res) => {
 	res.status(200).render('./es/aboutES', (err, html) => {
 		if(err){
@@ -75,6 +81,9 @@ app.get('/en/about/', (req, res) => {
 	});
 });
 
+/*
+*	archives
+*/
 app.get('/archives/', (req, res) => {
 	res.status(200).render('./es/archivesES', (err, html) => {
 		if(err){
@@ -104,6 +113,9 @@ app.get('/en/archives/', (req, res) => {
 	});
 });
 
+/*
+*	single
+*/
 app.get('/proyects/:id', (req, res) => {
 	let filePath = path.join(__dirname, 'static', 'try.json');
 	let datos = JSON.parse(fs.readFileSync(filePath));
@@ -117,9 +129,46 @@ app.get('/proyects/:id', (req, res) => {
 	}
 
 	console.log(proy);
-	res.status(200).send(proy);
+	res.status(200).render('./es/singleES', {data: proy}, (err, html) => {
+		if(err){
+			res.send('<h1> something fucked up </h1>');
+			console.log(err);
+		}
+		else{
+			res.send(html);
+			console.log('sent: singleES');
+		}
+	});
 });
 
+app.get('/en/proyects/:id', (req, res) => {
+	let filePath = path.join(__dirname, 'static', 'try.json');
+	let datos = JSON.parse(fs.readFileSync(filePath));
+
+	let id = req.params.id;
+	let proy;
+	for(let i of datos){
+		if(id == i.id){
+			proy = i;
+		}
+	}
+
+	console.log(proy);
+	res.status(200).render('./en/singleEN', {data: proy}, (err, html) => {
+		if(err){
+			res.send('<h1> something fucked up </h1>');
+			console.log(err);
+		}
+		else{
+			res.send(html);
+			console.log('sent: singleEN');
+		}
+	});
+});
+
+/*
+*	proyects
+*/
 app.get('/proyects/', (req, res) => {
 	let filePath = path.join(__dirname, 'static', 'try.json');
 	let datos = JSON.parse(fs.readFileSync(filePath));
@@ -132,7 +181,7 @@ app.get('/proyects/', (req, res) => {
 		}
 		else{
 			res.send(html);
-			console.log('sent: proyects');
+			console.log('sent: proyectsES');
 		}
 	});
 });
@@ -154,6 +203,9 @@ app.get('/en/proyects/', (req, res) => {
 	});
 });
 
+/*
+*	statics
+*/
 app.get('/static/:dir/:fileName', (req, res) => {
 	let dir = req.params.dir;
 	let fileName = req.params.fileName;
@@ -177,6 +229,9 @@ app.get('/static/:dir/:fileName', (req, res) => {
 	});
 });
 
+/*
+*	adding
+*/
 app.post('/email/', (req, res) => {
 	let form = req.body;
 	if(form.name && form.email && form.title && form.msg){
