@@ -387,6 +387,8 @@ body {
 
 #sec3 img{
   fill: black;
+  display: block;
+  margin: auto;
 }
 
 @media (max-width: 770px) {

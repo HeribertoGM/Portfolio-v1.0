@@ -112,11 +112,11 @@
 					</div>
 				</div>
 			</a>
-			<a class="col classContact" href="https://github.com/HeribertoGM">
+			<a class="col classContact" onclick="copyToClipboard()" onmouseenter="appearMail()" onmouseleave="disappearMail()">
 				<div class="d-flex justify-content-center align-items-center h-100">
-					<div class="align-middle p-4">
+					<div class="p-4">
 						<img src="/static/images/mail.svg" width="120" height="120">
-						<h3>Mail</h3>
+						<h3 id="mail">Mail</h3>
 					</div>
 				</div>
 			</a>
@@ -128,7 +128,8 @@
 <%- include('./footerES') -%>
 
 <!-- custom js -->
-<script type="text/javascript" src="/static/js/landing.js"></script>
+<script type="text/javascript" src="/static/js/carousel.js"></script>
+<script type="text/javascript" src="/static/js/mail.js"></script>
 
 <!-- post -->
 <%- include('../general/post') -%>
