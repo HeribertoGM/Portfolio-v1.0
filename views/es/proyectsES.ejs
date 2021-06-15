@@ -14,18 +14,10 @@
 <!-- Dentro -->
 <div class="container" id="box">
 	<h1 class="display-1 text-muted">Proyectos</h1>
-	<% let rows = Math.floor(len/3); %>
-	<% let rest = len%3; %>
-
-	<% for(let i=rows; i>0; i--){ %>
-		<% let index = [(i*3)-2,(i*3)-1,(i*3)]; %>
-		<%- include('./rowES', {data: data, indx: index}); -%>
-	<% } %>
 
 	<div class="row my-4">
-		<% for(let i=rest; i>0; i--){ %>
-			<% let index = rest-i; %>
-			<%- include('./colES', {data: data, indx: index}); -%>
+		<% for(let i=len-1; i>=0; i--){ %>
+			<%- include('./colES', {data: data, indx: i}); -%>
 		<% } %>
 	</div>
 </div>
