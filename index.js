@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const ejs = require('ejs');
-const nm = require('nodemailer');
 
 const app = express();
 
@@ -10,14 +9,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 app.set('view engine', 'ejs');
-
-const transporter = nm.createTransport({
-  service: 'gmail',
-  auth: {
-	user: 'gilheribertosender@gmail.com',
-	pass: 'Alejandro-9010'
-  }
-});
 
 /*
 *	landing
@@ -239,57 +230,14 @@ app.get('/static/:dir/:fileName', (req, res) => {
 });
 
 /*
-*	adding
-*/
-app.post('/email/', (req, res) => {
-	let form = req.body;
-	if(form.name && form.email && form.title && form.msg){
-		let filePath = path.join(__dirname, 'static', 'mail.json');
-		let mails = JSON.parse(fs.readFileSync(filePath));
-
-		mails.push(form);
-
-		let data = JSON.stringify(mails, null, 4);
-		fs.writeFile('./static/mail.json', data, (err) => {
-			if(err){
-				console.log("Error: " + err);
-			}
-			else{
-				console.log("Archivo reescrito");
-			}
-		});
-
-		let mailOptions = {
-			from: 'gilheribertosender@gmail.com',
-			to: 'gilheriberto2@gmail.com',
-			subject: form.title,
-			text: `from: ${form.email}\nname: ${form.name}\nmessage: ${form.msg}`
-		};
-
-		transporter.sendMail(mailOptions, function(error, info){
-			if (error) {
-				console.log(error);
-			} else {
-				console.log('Email sent: ' + info.response);
-			}
-		});
-
-		res.send("<h1>Enviado!</h1><br><a href='/'>Regresar</a>");
-	}
-	else{
-		res.send("<h1>Incompleto :(</h1><br><a href='/'>Regresar</a>");
-	}
-});
-
-/*
 *	listen
 */
-app.listen(3000, (err) => {
+app.listen(3000, '192.23.65.14', (err) => {
 	if(err){
 		console.log(err);
 	}
 	else{
-		console.log('listening on localhost:3000');
+		console.log('listening on 192.23.65.14:3000');
 	}
 });
 
