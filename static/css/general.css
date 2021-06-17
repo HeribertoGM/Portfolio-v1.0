@@ -1,0 +1,25 @@
+/*
+	navbar
+*/
+#navbardrop {
+	width: 40px;
+	height: 40px;
+}
+
+@media (max-width: 580px) {
+	#navbardrop {
+		height: 50px;
+	}
+}
+
+.dropdownImg {
+	width: 25px;
+	height: 30px;
+}
+
+/*
+	footer
+*/
+footer {
+	height: 10vh;
+}
