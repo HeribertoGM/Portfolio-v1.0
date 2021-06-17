@@ -7,6 +7,7 @@ const app = express();
 
 const esp = require('./routes/esp');
 const eng = require('./routes/eng');
+const jap = require('./routes/jap');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
@@ -15,10 +16,7 @@ app.set('view engine', 'ejs');
 
 app.use('/', esp);
 app.use('/en', eng);
-
-app.get('/jp/', (req, res) => {
-	res.status(200).send("<h1>Working!</h1>");
-});
+app.use('/jp', jap);
 
 /*
 *	statics
