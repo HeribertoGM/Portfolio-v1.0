@@ -41,15 +41,15 @@ router.get('/about', (req, res) => {
 /*
 *	archives
 */
-router.get('/archives', (req, res) => {
-	res.status(200).render('./es/archivesES', (err, html) => {
+router.get('/cv', (req, res) => {
+	res.status(200).render('./es/cvES', (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
 		}
 		else{
 			res.send(html);
-			console.log('sent: archives');
+			console.log('sent: cvES');
 		}
 	});
 });

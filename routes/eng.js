@@ -26,10 +26,7 @@ router.get('/', (req, res) => {
 *	about
 */
 router.get('/about', (req, res) => {
-	let filePath = path.join(__dirname, '..', 'static', 'try.json');
-	let datos = JSON.parse(fs.readFileSync(filePath));
-
-	res.status(200).render('./en/aboutEN', {data: datos}, (err, html) => {
+	res.status(200).render('./en/aboutEN', (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
@@ -44,18 +41,15 @@ router.get('/about', (req, res) => {
 /*
 *	archives
 */
-router.get('/archives', (req, res) => {
-	let filePath = path.join(__dirname, '..', 'static', 'try.json');
-	let datos = JSON.parse(fs.readFileSync(filePath));
-
-	res.status(200).render('./en/archivesEN', {data: datos}, (err, html) => {
+router.get('/cv', (req, res) => {
+	res.status(200).render('./en/cvEN', (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
 		}
 		else{
 			res.send(html);
-			console.log('sent: archivesEN');
+			console.log('sent: cvEN');
 		}
 	});
 });
