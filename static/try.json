@@ -4,7 +4,7 @@
 		"img": "/static/images/fondo1pru.jpeg",
 		"titleEN": "title1",
 		"titleES": "titulo1",
-		"flag": 1,
+		"landingFlag": true,
 		"infoEN": "1 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"infoES": "1 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
@@ -25,7 +25,7 @@
 		"img": "/static/images/capturaprue.png",
 		"titleEN": "title2",
 		"titleES": "titulo2",
-		"flag": 2,
+		"landingFlag": true,
 		"infoEN": "2 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"infoES": "2 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
@@ -44,7 +44,7 @@
 		"img": "/static/images/fondo1pru.jpeg",
 		"titleEN": "title3",
 		"titleES": "titulo3",
-		"flag": -1,
+		"landingFlag": false,
 		"infoEN": "-1 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"infoES": "-1 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
@@ -63,7 +63,7 @@
 		"img": "/static/images/capturaprue.png",
 		"titleEN": "title4",
 		"titleES": "titulo4",
-		"flag": 4,
+		"landingFlag": true,
 		"infoEN": "4 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"infoES": "4 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
@@ -82,7 +82,7 @@
 		"img": "/static/images/fondo1pru.jpeg",
 		"titleEN": "title5",
 		"titleES": "titulo5",
-		"flag": -1,
+		"landingFlag": false,
 		"infoEN": "-1 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"infoES": "-1 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
@@ -101,7 +101,7 @@
 		"img": "/static/images/capturaprue.png",
 		"titleEN": "title6",
 		"titleES": "titulo6",
-		"flag": 3,
+		"landingFlag": true,
 		"infoEN": "3 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"infoES": "3 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
@@ -120,7 +120,7 @@
 		"img": "/static/images/fondo1pru.jpeg",
 		"titleEN": "title7",
 		"titleES": "titulo7",
-		"flag": -1,
+		"landingFlag": false,
 		"infoEN": "-1 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"infoES": "-1 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [

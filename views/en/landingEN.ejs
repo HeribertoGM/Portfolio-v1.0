@@ -27,7 +27,8 @@
 	<h1 class="display-4" id="titulProyect">Proyects</h1>
 	<br>
 	<div class="container">
-		<% let objs = data.filter((i) => { return i.flag != -1}); %>
+		<% let objs = data.filter((i) => { return i.landingFlag }); %>
+		<% objs.reverse(); %>
 		<div class="row">
 			<div class="col h-100">
 				<a href="/en/proyects/<%- objs[0].id %>">

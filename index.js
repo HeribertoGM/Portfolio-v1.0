@@ -4,6 +4,7 @@ const fs = require('fs');
 const ejs = require('ejs');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 const esp = require('./routes/esp');
 const eng = require('./routes/eng');
@@ -47,12 +48,12 @@ app.get('/static/:dir/:fileName', (req, res) => {
 /*
 *	listen
 */
-app.listen(3000, '192.23.65.14', (err) => {
+app.listen(port, '192.23.65.14', (err) => {
 	if(err){
 		console.log(err);
 	}
 	else{
-		console.log('listening on 192.23.65.14:3000');
+		console.log('listening on 192.23.65.14:'+port);
 	}
 });
 
