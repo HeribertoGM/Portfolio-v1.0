@@ -20,14 +20,41 @@ app.use('/en', eng);
 app.use('/jp', jap);
 
 /*
-*	statics
+* statics imagenes de proyecto
 */
-app.get('/static/:dir/:fileName', (req, res) => {
+app.get('/static/:type/:dir/:fileName', (req, res) => {
+	let type = req.params.type;
 	let dir = req.params.dir;
 	let fileName = req.params.fileName;
 
 	var options = {
-		root: path.join(__dirname, 'static', dir),
+		root: path.join(__dirname, 'static', type, dir),
+		dotfiles: 'deny',
+		headers: {
+			'x-timestamp': Date.now(),
+			'x-sent': true
+		}
+	}
+
+	res.status(200).sendFile(fileName, options, (err) => {
+		if(err){
+			console.log(err);
+		}
+		else{
+			console.log("sent: ", fileName);
+		}
+	});
+});
+
+/*
+*	statics general
+*/
+app.get('/static/:type/:fileName', (req, res) => {
+	let type = req.params.type;
+	let fileName = req.params.fileName;
+
+	var options = {
+		root: path.join(__dirname, 'static', type),
 		dotfiles: 'deny',
 		headers: {
 			'x-timestamp': Date.now(),

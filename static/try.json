@@ -101,7 +101,7 @@
 		"img": "/static/images/capturaprue.png",
 		"titleEN": "title6",
 		"titleES": "titulo6",
-		"landingFlag": true,
+		"landingFlag": false,
 		"infoEN": "3 EN Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"infoES": "3 ES Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 		"tags": [
@@ -132,6 +132,22 @@
 			"/static/images/MoonByul.jpg",
 			"/static/images/tiger.jpg",
 			"/static/images/demon.jpg"
+		]
+	},
+	{
+		"id": 8,
+		"img": "/static/images/1/portada.png",
+		"titleEN": "Binary Search Tree",
+		"titleES": "Árbol Binario de Búsqueda",
+		"landingFlag": true,
+		"infoEN": "Implementation of a BST (Binary Search Tree) developed on data structures subject made with the programming language C++.",
+		"infoES": "Implementacion de un ABB (Árbol Binario de Búsqueda) desarrollado en la materia de estructuras de datos con el lenguaje de programación C++.",
+		"tags": [
+			{"type":"badge-primary", "in": "C++"}
+		],
+		"showcase": [
+			"/static/images/1/ss1.png",
+			"/static/images/1/ss2.png"
 		]
 	}
 ]
