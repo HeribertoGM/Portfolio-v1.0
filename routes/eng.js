@@ -57,7 +57,7 @@ router.get('/cv', (req, res) => {
 /*
 *	single
 */
-router.get('/proyects/:id', (req, res) => {
+router.get('/projects/:id', (req, res) => {
 	let filePath = path.join(__dirname, '..', 'static', 'try.json');
 	let datos = JSON.parse(fs.readFileSync(filePath));
 
@@ -83,21 +83,21 @@ router.get('/proyects/:id', (req, res) => {
 });
 
 /*
-*	proyects
+*	projects
 */
-router.get('/proyects', (req, res) => {
+router.get('/projects', (req, res) => {
 	let filePath = path.join(__dirname, '..', 'static', 'try.json');
 	let datos = JSON.parse(fs.readFileSync(filePath));
 	let num = datos.length;
 
-	res.status(200).render('./en/proyectsEN', {data: datos, len: num}, (err, html) => {
+	res.status(200).render('./en/projectsEN', {data: datos, len: num}, (err, html) => {
 		if(err){
 			res.send('<h1> something fucked up </h1>');
 			console.log(err);
 		}
 		else{
 			res.send(html);
-			console.log('sent: proyectsEN');
+			console.log('sent: projectsEN');
 		}
 	});
 });

@@ -24,14 +24,14 @@
 <hr>
 <!-- Seccion Proyectos -->
 <section id="sec2">
-	<h1 class="display-4" id="titulProyect">Proyects</h1>
+	<h1 class="display-4" id="titulProyect">Projects</h1>
 	<br>
 	<div class="container">
 		<% let objs = data.filter((i) => { return i.landingFlag }); %>
 		<% objs.reverse(); %>
 		<div class="row">
 			<div class="col h-100">
-				<a href="/en/proyects/<%- objs[0].id %>">
+				<a href="/en/projects/<%- objs[0].id %>">
 					<img class="img-fluid h-100" src="<%- objs[0].img %>" id="scale-up-tl">
 					<h1 id="topizq"><%- objs[0].titleEN %>-<%- objs[0].id %></h1>
 					<h1 id=tl-text><%- objs[0].titleEN %></h1>
@@ -44,7 +44,7 @@
 				</a>
 			</div>
 			<div class="col h-100">
-				<a href="/en/proyects/<%- objs[1].id %>">
+				<a href="/en/projects/<%- objs[1].id %>">
 					<img class="img-fluid h-100" src="<%- objs[1].img %>" id="scale-up-tr">
 					<h1 class="text-right" id="topder"><%- objs[1].titleEN %>-<%- objs[1].id %></h1>
 					<h1 class="text-right" id=tr-text><%- objs[1].titleEN %></h1>
@@ -59,7 +59,7 @@
 		</div>
 		<div class="row">
 			<div class="col h-100">
-				<a href="/en/proyects/<%- objs[2].id %>">
+				<a href="/en/projects/<%- objs[2].id %>">
 					<img class="img-fluid h-100" src="<%- objs[2].img %>" id="scale-up-bl">
 					<h1 id="botizq"><%- objs[2].titleEN %>-<%- objs[2].id %></h1>
 					<h1 id=bl-text><%- objs[2].titleEN %></h1>
@@ -72,7 +72,7 @@
 				</a>
 			</div>
 			<div class="col h-100">
-				<a href="/en/proyects/<%- objs[3].id %>">
+				<a href="/en/projects/<%- objs[3].id %>">
 					<img class="img-fluid h-100" src="<%- objs[3].img %>" id="scale-up-br">
 					<h1 class="text-right" id="botder"><%- objs[3].titleEN %>-<%- objs[3].id %></h1>
 					<h1 class="text-right" id=br-text><%- objs[3].titleEN %></h1>
