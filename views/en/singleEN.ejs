@@ -14,23 +14,24 @@
 <!-- Dentro -->
 <section>
 	<div class="container" id="gencont">
-		<div class="row" style="border: solid 3px red;">
-			<div class="col-sm-7" style="border: solid 3px blue;">
+		<div class="row">
+			<div class="col-sm-7">
 				<div class="d-flex align-items-center h-100">
-					<div style="border: solid 3px green;">
+					<div>
 						<h1><%- data.titleEN %></h1>
 						<h5 class="text-muted"><%- data.tags[0].in %></h5>
-						<p><%- data.infoEN %></p>
+						<p class="text-muted"><%- data.infoEN %></p>
+						<a href="<%- data.repo %>" class="btn btn-secondary">Go to Github Repo</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-5 text-center"  style="border: solid 3px blue;">
+			<div class="col-sm-5 text-center">
 				<img src="<%- data.img %>" class="img-fluid">
 			</div>
 		</div>
 		<hr>
-		<div class="row" style="border: solid 3px red;">
-			<div id="imgs" class="w-100 text-center" style="border: solid 3px pink;">
+		<div class="row">
+			<div id="imgs" class="w-100 text-center">
 				<% for(let i of data.showcase){ %>
 					<img class="imagen" src="<%- i %>">
 				<% } %>

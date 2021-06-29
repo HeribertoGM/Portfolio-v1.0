@@ -28,6 +28,7 @@ body {
 }
 
 .row {
+	border: solid 5px dimgray;
 	padding: 10px;
 }
 

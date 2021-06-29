@@ -18,7 +18,8 @@
 			"/static/images/demon.jpg",
 			"/static/images/t1.jpeg",
 			"/static/images/pixbg.png"
-		]
+		],
+		"repo": "https://github.com/HeribertoGM/Portfolio"
 	},
 	{
 		"id": 2,
@@ -37,7 +38,8 @@
 			"/static/images/t1.jpeg",
 			"/static/images/pixbg.png",
 			"/static/images/demon.jpg"
-		]
+		],
+		"repo": "https://github.com/HeribertoGM/Portfolio"
 	},
 	{
 		"id": 3,
@@ -56,7 +58,8 @@
 			"/static/images/MoonByul.jpg",
 			"/static/images/tiger.jpg",
 			"/static/images/demon.jpg"
-		]
+		],
+		"repo": "https://github.com/HeribertoGM/Portfolio"
 	},
 	{
 		"id": 4,
@@ -75,7 +78,8 @@
 			"/static/images/MoonByul.jpg",
 			"/static/images/tiger.jpg",
 			"/static/images/demon.jpg"
-		]
+		],
+		"repo": "https://github.com/HeribertoGM/Portfolio"
 	},
 	{
 		"id": 5,
@@ -94,7 +98,8 @@
 			"/static/images/MoonByul.jpg",
 			"/static/images/tiger.jpg",
 			"/static/images/demon.jpg"
-		]
+		],
+		"repo": "https://github.com/HeribertoGM/Portfolio"
 	},
 	{
 		"id": 6,
@@ -113,7 +118,8 @@
 			"/static/images/MoonByul.jpg",
 			"/static/images/tiger.jpg",
 			"/static/images/demon.jpg"
-		]
+		],
+		"repo": "https://github.com/HeribertoGM/Portfolio"
 	},
 	{
 		"id": 7,
@@ -132,7 +138,8 @@
 			"/static/images/MoonByul.jpg",
 			"/static/images/tiger.jpg",
 			"/static/images/demon.jpg"
-		]
+		],
+		"repo": "https://github.com/HeribertoGM/Portfolio"
 	},
 	{
 		"id": 8,
@@ -148,6 +155,7 @@
 		"showcase": [
 			"/static/images/1/ss1.png",
 			"/static/images/1/ss2.png"
-		]
+		],
+		"repo": "https://github.com/HeribertoGM/Portfolio"
 	}
 ]
